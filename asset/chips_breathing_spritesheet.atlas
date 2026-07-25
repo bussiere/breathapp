@@ -1,0 +1,215 @@
+chips_breathing_spritesheet.png
+size: 4656,4395
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+breath_000
+  rotate: false
+  xy: 0, 0
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 0
+breath_001
+  rotate: false
+  xy: 776, 0
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 1
+breath_002
+  rotate: false
+  xy: 1552, 0
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 2
+breath_003
+  rotate: false
+  xy: 2328, 0
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 3
+breath_004
+  rotate: false
+  xy: 3104, 0
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 4
+breath_005
+  rotate: false
+  xy: 3880, 0
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 5
+breath_006
+  rotate: false
+  xy: 0, 879
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 6
+breath_007
+  rotate: false
+  xy: 776, 879
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 7
+breath_008
+  rotate: false
+  xy: 1552, 879
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 8
+breath_009
+  rotate: false
+  xy: 2328, 879
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 9
+breath_010
+  rotate: false
+  xy: 3104, 879
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 10
+breath_011
+  rotate: false
+  xy: 3880, 879
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 11
+breath_012
+  rotate: false
+  xy: 0, 1758
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 12
+breath_013
+  rotate: false
+  xy: 776, 1758
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 13
+breath_014
+  rotate: false
+  xy: 1552, 1758
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 14
+breath_015
+  rotate: false
+  xy: 2328, 1758
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 15
+breath_016
+  rotate: false
+  xy: 3104, 1758
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 16
+breath_017
+  rotate: false
+  xy: 3880, 1758
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 17
+breath_018
+  rotate: false
+  xy: 0, 2637
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 18
+breath_019
+  rotate: false
+  xy: 776, 2637
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 19
+breath_020
+  rotate: false
+  xy: 1552, 2637
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 20
+breath_021
+  rotate: false
+  xy: 2328, 2637
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 21
+breath_022
+  rotate: false
+  xy: 3104, 2637
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 22
+breath_023
+  rotate: false
+  xy: 3880, 2637
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 23
+breath_024
+  rotate: false
+  xy: 0, 3516
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 24
+breath_025
+  rotate: false
+  xy: 776, 3516
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 25
+breath_026
+  rotate: false
+  xy: 1552, 3516
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 26
+breath_027
+  rotate: false
+  xy: 2328, 3516
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 27
+breath_028
+  rotate: false
+  xy: 3104, 3516
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 28
+breath_029
+  rotate: false
+  xy: 3880, 3516
+  size: 776, 879
+  orig: 776, 879
+  offset: 0, 0
+  index: 29
