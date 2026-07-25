@@ -1,2 +1,11 @@
-*.pyc
+# Python cache files
+__pycache__/
+*.py[cod]
 
+# Java / Gradle build outputs
+.gradle/
+build/
+*.class
+
+# Packaged application builds
+dist/
