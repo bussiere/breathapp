@@ -1,0 +1,9 @@
+{
+  "title": "About Breath",
+  "pages": [
+    {
+      "title": "About",
+      "html": "<h1>Breath</h1><p>Breath is a Java/Swing tool for adding subtle 2D breathing deformation to PNG sprites without a skeleton or mesh editor.</p><p>It exports PNG sequences, APNG, GIF, and TexturePacker/Aseprite-compatible spritesheets.</p><p><img src='../test_sprite/chips.png' width='180'></p>"
+    }
+  ]
+}

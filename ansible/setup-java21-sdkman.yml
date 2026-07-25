@@ -1,0 +1,42 @@
+---
+- name: Configure local Java 21 with SDKMAN on Linux/macOS
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  vars:
+    java_sdkman_version: "21.0.4-tem"
+    sdkman_dir: "{{ ansible_env.HOME }}/.sdkman"
+  tasks:
+    - name: Ensure this playbook runs on Linux or macOS
+      ansible.builtin.assert:
+        that:
+          - ansible_system in ["Linux", "Darwin"]
+        fail_msg: "Use setup-java21-windows.yml for Windows hosts."
+
+    - name: Install SDKMAN when missing
+      ansible.builtin.shell: |
+        set -euo pipefail
+        curl -s "https://get.sdkman.io" | bash
+      args:
+        executable: /bin/bash
+        creates: "{{ sdkman_dir }}/bin/sdkman-init.sh"
+
+    - name: Install and select Java 21 with SDKMAN
+      ansible.builtin.shell: |
+        set -euo pipefail
+        source "{{ sdkman_dir }}/bin/sdkman-init.sh"
+        sdk install java "{{ java_sdkman_version }}" || true
+        sdk default java "{{ java_sdkman_version }}"
+      args:
+        executable: /bin/bash
+
+    - name: Verify Java 21 and jpackage from SDKMAN
+      ansible.builtin.shell: |
+        set -euo pipefail
+        source "{{ sdkman_dir }}/bin/sdkman-init.sh"
+        java -version
+        jpackage --version
+        test "$(jpackage --version | cut -d. -f1)" = "21"
+      args:
+        executable: /bin/bash
+      changed_when: false

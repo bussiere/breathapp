@@ -1,0 +1,17 @@
+{
+  "title": "Breath Tutorial",
+  "pages": [
+    {
+      "title": "1. Place controls",
+      "html": "<h1>Breath Tutorial</h1><p>Load a PNG, then use <b>Point</b> for local anchors and <b>Trait</b> for freehand warp or lock regions.</p><p><img src='../test_sprite/chips.png' width='260'></p><p>Use unmovable controls around shoulders, pelvis, props, or hard edges. Those locks intentionally win over animated points and traits.</p>"
+    },
+    {
+      "title": "2. Tune motion",
+      "html": "<h1>Tune Motion</h1><p><b>Offset X/Y</b> defines the maximum movement. <b>Warp angle</b> rotates that movement while preserving its distance.</p><p><b>Breath strength</b> is global. Enable <b>Custom breath</b> on a point or trait when that control needs a stronger or weaker movement than the rest of the image.</p>"
+    },
+    {
+      "title": "3. Reuse on many images",
+      "html": "<h1>Ratio Presets</h1><p><b>Export ratio preset</b> stores point and trait positions as image ratios instead of pixels.</p><p><b>Batch apply</b> loads that preset, asks for several PNG files, then exports GIF, APNG, or spritesheet plus JSON and atlas for every selected image.</p>"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+systemProp.http.proxyHost=10.154.61.6
+systemProp.http.proxyPort=3128
+systemProp.https.proxyHost=10.154.61.6
+systemProp.https.proxyPort=3128
+org.gradle.daemon=true
+org.gradle.jvmargs=-Xms128m -Xmx256m -Dfile.encoding=UTF-8 -Dconsole.encoding=UTF-8
+org.gradle.configureondemand=false
+org.gradle.logging.level=quiet
+org.gradle.java.home=C:/Users/ppenetbertdelabuss01/scoop/apps/temurin21-jdk/21.0.10-7.0/
+gdxControllersVersion=2.2.3
+commonsCollectionsVersion=4.5.0-M3
+graalHelperVersion=2.0.1
+enableGraalNative=false
+gdxVersion=1.13.5
+groovyVersion=4.0.26
+anim8Version=0.5.3
+artemisOdbVersion=2.3.0
+controllerMappingVersion=2.3.0
+projectVersion=1.0.0

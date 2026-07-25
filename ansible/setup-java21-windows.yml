@@ -1,0 +1,39 @@
+---
+- name: Configure Java 21 on Windows hosts
+  hosts: windows
+  gather_facts: false
+  vars:
+    java_home_machine: 'C:\Program Files\Eclipse Adoptium\jdk-21'
+  tasks:
+    - name: Ensure Chocolatey is installed
+      chocolatey.chocolatey.win_chocolatey:
+        name: chocolatey
+        state: present
+
+    - name: Install Temurin JDK 21
+      chocolatey.chocolatey.win_chocolatey:
+        name: temurin21
+        state: present
+
+    - name: Set JAVA_HOME for the machine
+      ansible.windows.win_environment:
+        state: present
+        name: JAVA_HOME
+        value: "{{ java_home_machine }}"
+        level: machine
+
+    - name: Add JDK 21 bin directory to machine PATH
+      ansible.windows.win_path:
+        elements:
+          - '{{ java_home_machine }}\bin'
+        scope: machine
+        state: present
+
+    - name: Verify Java 21 and jpackage
+      ansible.windows.win_shell: |
+        $env:JAVA_HOME = "{{ java_home_machine }}"
+        $env:PATH = "{{ java_home_machine }}\bin;$env:PATH"
+        java -version
+        $version = jpackage --version
+        if (-not $version.StartsWith("21.")) { throw "jpackage is not Java 21: $version" }
+      changed_when: false

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.AppTest" tests="38" skipped="0" failures="0" errors="0" timestamp="2026-07-25T14:38:32.124Z" hostname="Aramaki" time="2.477">
+  <properties/>
+  <testcase name="projectJsonSaveContainsCompletePointAndStrokeState" classname="org.example.AppTest" time="0.095"/>
+  <testcase name="projectJsonRoundTripsFreeStrokes" classname="org.example.AppTest" time="0.003"/>
+  <testcase name="warpAngleRotatesOffsetAndKeepsDistance" classname="org.example.AppTest" time="0.001"/>
+  <testcase name="customBreathingStrengthOverridesGlobalPerControl" classname="org.example.AppTest" time="0.001"/>
+  <testcase name="deformerMovesPixelsOnChipsSprite" classname="org.example.AppTest" time="0.185"/>
+  <testcase name="controlStrokeClampPointsToImageUpdatesVerticesAndBounds" classname="org.example.AppTest" time="0.001"/>
+  <testcase name="livePreviewRequestCopiesMutableControlsForBackgroundRendering" classname="org.example.AppTest" time="0.001"/>
+  <testcase name="livePreviewTreatsCooperativeCancellationAsNonError" classname="org.example.AppTest" time="0.001"/>
+  <testcase name="tutorialSessionCopiesAndConsumesSnapshot" classname="org.example.AppTest" time="0.001"/>
+  <testcase name="unmovablePointOverridesAnimatedStroke" classname="org.example.AppTest" time="0.0"/>
+  <testcase name="spriteEditorPanelCanLoadImageWithoutClearingControls" classname="org.example.AppTest" time="0.09"/>
+  <testcase name="controlStrokeTranslateMovesPointsAndBounds" classname="org.example.AppTest" time="0.0"/>
+  <testcase name="optimizedDeformerMatchesLegacyReferenceWithPointsStrokesAndLocks" classname="org.example.AppTest" time="0.011"/>
+  <testcase name="editorExportServiceBatchWritesSpritesheetAndReportsFailures" classname="org.example.AppTest" time="0.011"/>
+  <testcase name="exporterWritesAllRequestedFormats" classname="org.example.AppTest" time="2.008"/>
+  <testcase name="animatedAndUnmovableAreMutuallyExclusiveOnControls" classname="org.example.AppTest" time="0.001"/>
+  <testcase name="unmovablePointsLockPixelsInsideTheirRadius" classname="org.example.AppTest" time="0.0"/>
+  <testcase name="projectJsonRoundTripsPoints" classname="org.example.AppTest" time="0.018"/>
+  <testcase name="helpJsonResourcesLoadHtmlPagesWithImages" classname="org.example.AppTest" time="0.002"/>
+  <testcase name="deformerStopsWhenCancellationIsRequested" classname="org.example.AppTest" time="0.001"/>
+  <testcase name="projectImageLoaderPrefersEmbeddedImageOverExistingDiskPath" classname="org.example.AppTest" time="0.002"/>
+  <testcase name="editorFilePathAddsMissingExtensionOnly" classname="org.example.AppTest" time="0.001"/>
+  <testcase name="unmovableStrokeOverridesAnimatedPointsAndStrokes" classname="org.example.AppTest" time="0.0"/>
+  <testcase name="imageControlBoundsClampsPointsAndStrokeVerticesIntoImage" classname="org.example.AppTest" time="0.0"/>
+  <testcase name="unmovablePointOverridesAnimatedPointsAndAnimatedStrokesTogether" classname="org.example.AppTest" time="0.0"/>
+  <testcase name="animatorUsesSinusoidalPhase" classname="org.example.AppTest" time="0.0"/>
+  <testcase name="gifExportRestoresBackgroundBetweenFrames" classname="org.example.AppTest" time="0.002"/>
+  <testcase name="editorExportServiceBatchUsesDistinctPngNamesForSpritesheetAndApng" classname="org.example.AppTest" time="0.005"/>
+  <testcase name="imageControlBoundsDetectsPointsAndStrokeVerticesOutsideImage" classname="org.example.AppTest" time="0.001"/>
+  <testcase name="animatedStrokesContributeToDisplacementWithPoints" classname="org.example.AppTest" time="0.0"/>
+  <testcase name="spriteEditorPanelTranslatesSelectedStrokeWithinImage" classname="org.example.AppTest" time="0.0"/>
+  <testcase name="projectFromEditorStateEmbedsCurrentImageForPortableSave" classname="org.example.AppTest" time="0.002"/>
+  <testcase name="tutorialProjectEmbedsChipsImageAndPoints" classname="org.example.AppTest" time="0.016"/>
+  <testcase name="projectJsonWithoutStrokesStillLoadsAsEmptyStrokeList" classname="org.example.AppTest" time="0.0"/>
+  <testcase name="animationPreviewRequestCopiesMutableControlsForBackgroundRendering" classname="org.example.AppTest" time="0.002"/>
+  <testcase name="deformerKeepsMediumSpriteWithinBroadPerformanceBudget" classname="org.example.AppTest" time="0.005"/>
+  <testcase name="ratioPresetRejectsWrongFormat" classname="org.example.AppTest" time="0.0"/>
+  <testcase name="ratioPresetRoundTripsAndAppliesToDifferentImageSize" classname="org.example.AppTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
