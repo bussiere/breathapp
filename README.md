@@ -83,7 +83,13 @@ The app exports:
 <img src="asset/chips_breathing_spritesheet.png" alt="Chips breathing spritesheet" width="194"> 
 
 - a TexturePacker/Aseprite-style JSON texture atlas for that spritesheet;
+  
+asset/chips_breathing_spritesheet.json
+
 - a `.atlas` texture atlas for that spritesheet;
+- 
+asset/chips_breathing_spritesheet.atlas
+
 - an animated PNG/APNG;
 - an animated GIF.
 
