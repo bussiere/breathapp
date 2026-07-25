@@ -4,7 +4,9 @@ This project is released under the Apache License 2.0, except for the `chips.png
 
 ![2D Breathing Sprite Chips](asset/2D_Breathing_Sprite_Chips.png)
 
-<img src="asset/chips_breathing.gif" alt="Chips breathing animation" width="194">
+| Non breathing (`chips.png`) | Breathing (`chips_breathing.gif`) |
+| --- | --- |
+| <img src="app/src/main/resources/test_sprite/chips.png" alt="Chips non breathing" width="194"> | <img src="asset/chips_breathing.gif" alt="Chips breathing animation" width="194"> |
 
 Download standalone binaries: https://github.com/bussiere/breathapp/releases
 
