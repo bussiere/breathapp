@@ -79,6 +79,9 @@ The app exports:
 
 - a PNG sequence (`breath_000.png`, etc.);
 - a PNG spritesheet;
+
+<img src="asset/chips_breathing_spritesheet.png" alt="Chips breathing spritesheet" width="194"> 
+
 - a TexturePacker/Aseprite-style JSON texture atlas for that spritesheet;
 - a `.atlas` texture atlas for that spritesheet;
 - an animated PNG/APNG;
