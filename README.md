@@ -84,11 +84,11 @@ The app exports:
 
 - a TexturePacker/Aseprite-style JSON texture atlas for that spritesheet;
   
-asset/chips_breathing_spritesheet.json
+<a href="asset/chips_breathing_spritesheet.json">asset/chips_breathing_spritesheet.json</a>
 
 - a `.atlas` texture atlas for that spritesheet;
-- 
-asset/chips_breathing_spritesheet.atlas
+  
+<a href="asset/chips_breathing_spritesheet.atlas">asset/chips_breathing_spritesheet.atlas</a>
 
 - an animated PNG/APNG;
 - an animated GIF.
