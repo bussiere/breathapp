@@ -22,9 +22,11 @@ This project is a very simple 2D animation tool designed to offer a similar but 
 
 **Note: Spine is a registered trademark of Esoteric Software LLC. This project is independent and is not affiliated with, sponsored by, or endorsed by Esoteric Software.**
 
-The implementation follows the spec summarized in `spec/logiciel-respiration-2d-swing.md`: the image is warped with control-point influence fields, without a skeleton or mesh system.
+The implementation uses control-point and free-line influence fields to warp the image directly, without a skeleton or mesh system.
 
 ## Run The App
+
+Java 21 is required for local development, tests, packaging, and the runtime bundled in standalone distributions.
 
 ```bash
 ./run-breath.sh
@@ -35,6 +37,9 @@ Gradle equivalent:
 ```bash
 ./gradlew run
 ```
+
+Distribution and standalone build documentation: [distribution.md](distribution.md).
+Maintainer code documentation: [doc/README.md](doc/README.md).
 
 ## Built-In Chips Tutorial
 
@@ -112,6 +117,9 @@ Generated files:
 The app remembers the last folder used for loading, saving, or exporting, then reopens file choosers in that same directory.
 
 APNG is the recommended animated format when the sprite relies on alpha transparency or soft edges. GIF export is useful for broad compatibility, but GIF has only limited transparency support and is best with sprites prepared on an opaque background.
+
+For sprites with soft alpha, shadows, or semi-transparent edges, prefer APNG over GIF. GIF transparency is effectively binary and can damage soft shadows around Chips-like sprites.
+
 
 
 ## Ratio Presets And Batch Export
@@ -229,6 +237,8 @@ The script uses `uv run --with pillow` and writes `export/chips_points_overlay.p
 
 ```bash
 ./gradlew test
+python3 -B scripts/test_package_common.py
+python3 -B scripts/test_upload_binary_github.py
 ```
 
 The tests cover:
@@ -240,5 +250,7 @@ The tests cover:
 - breathing strength and unmovable point locks;
 - animated free-line strokes and point/stroke lock priority;
 - project JSON persistence for point and trait colors, point outline width, and custom breath values;
-- ratio preset export/import and application to different image dimensions.
+- ratio preset export/import and application to different image dimensions;
+- standalone packaging helper behavior;
+- GitHub binary upload helper behavior without touching the network.
 

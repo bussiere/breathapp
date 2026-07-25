@@ -56,7 +56,7 @@ baseVersion=1.0
 buildNumber=0
 ```
 
-A chaque packaging reussi jusqu'a l'etape de creation de l'image applicative, le script incremente `buildNumber` puis utilise la version `baseVersion.buildNumber` pour `jpackage --app-version`, pour le fichier `VERSION.txt` inclus dans l'application, et pour le nom du zip. Avec les valeurs initiales ci-dessus, le prochain build produit donc la version `1.0.1`. Le compteur est commun aux trois OS: si Linux produit `1.0.1`, le build Windows suivant produira `1.0.2`, puis macOS `1.0.3`, etc.
+Apres les verifications rapides (`:app:clean`, `:app:test`, `:app:installDist`, controle du jar), et juste avant `jpackage`, le script incremente `buildNumber` puis utilise la version `baseVersion.buildNumber` pour `jpackage --app-version`, pour le fichier `VERSION.txt` inclus dans l'application, et pour le nom du zip. Si `jpackage` ou le smoke test echoue ensuite, ce numero peut donc etre consomme sans zip final. Avec les valeurs initiales ci-dessus, le prochain build produit la version `1.0.1`. Le compteur est commun aux trois OS: si Linux produit `1.0.1`, le build Windows suivant produira `1.0.2`, puis macOS `1.0.3`, etc.
 
 Pour changer de version mineure ou majeure, modifiez `baseVersion` manuellement et remettez `buildNumber=0` si vous voulez repartir de `.1`.
 
@@ -121,7 +121,21 @@ Le token doit avoir le droit de creer ou modifier des GitHub Releases sur ce dep
 scripts/upload_binary_github.py
 ```
 
-Le script cree la release si le tag n'existe pas encore, ou reutilise la release existante. Si un asset zip du meme nom existe deja sur la release, il est remplace avant upload.
+Le script cree la release si le tag n'existe pas encore, ou reutilise la release existante. Il upload uniquement les zips correspondant a la version courante de `build-version.properties`; si un asset zip du meme nom existe deja sur la release, il est remplace avant upload.
+
+## Release GitHub multi-OS
+
+Le compteur de version est global et s'incremente a chaque build, quel que soit l'OS. Un cycle de release construit sur trois machines peut donc produire par exemple:
+
+```text
+Breath-linux-64-1.0.4.zip
+Breath-windows-64-1.0.5.zip
+Breath-macos-64-1.0.6.zip
+```
+
+Le script d'upload filtre volontairement sur la version courante pour eviter d'envoyer de vieux zips restes dans `dist/`. Pour une release publique qui regroupe les trois OS sous un meme tag, lancez l'upload juste apres chaque build sur la machine qui vient de produire son zip, et saisissez le meme tag de release a chaque fois, par exemple `v1.0-release-2026-07-25`. La release GitHub contiendra alors les trois assets, chacun avec son numero de build propre.
+
+Si vous preferez un tag strictement egal au numero de version (`v1.0.N`), publiez chaque zip dans la release correspondant a son propre build.
 
 ## Nettoyage et regeneration
 
