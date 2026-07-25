@@ -15,6 +15,10 @@ GitHub repository: https://github.com/bussiere/breathapp
 
 Small Java/Swing editor for adding a subtle breathing animation to a 2D PNG sprite.
 
+*This project is a 2D animation tool designed to offer a similar but much simpler workflow than software like Spine2D.
+
+Note: Spine is a registered trademark of Esoteric Software LLC. This project is independent and is not affiliated with, sponsored by, or endorsed by Esoteric Software.*
+
 The implementation follows the spec summarized in `spec/logiciel-respiration-2d-swing.md`: the image is warped with control-point influence fields, without a skeleton or mesh system.
 
 ## Run The App
