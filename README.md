@@ -2,6 +2,9 @@
 
 This project is released under the Apache License 2.0, except for the `chips.png` mascot. The Chips mascot belongs to Maxime: https://linktr.ee/ChocoPain. All mascot rights remain his. Thanks to him; if you want to thank me for this software, please support him on Patreon (https://www.patreon.com/ChocoPain) or Ko-fi (https://ko-fi.com/chocopain).
 
+<p align="center"><a href="https://linktr.ee/ChocoPain"> <img src="asset/ChocoPain.jpg" alt="Chocopain" width="300"> </a></p>
+
+
 ![2D Breathing Sprite Chips](asset/2D_Breathing_Sprite_Chips.png)
 
 | Non breathing (`chips.png`) | Breathing (`chips_breathing.gif`) | Breathing Apng (`chips_breathing.png`) |
